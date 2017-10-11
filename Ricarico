@@ -1,0 +1,106 @@
+# Calculation-of-business-recharge
+# This simple program calculates the sales gain rate for a commercial company. It is in Italian.
+ #include <stdio.h>
+ #include <stdlib.h>
+ #include <float.h>
+
+ float a, b, c, d, e, f;
+ char g;
+ 
+ int main ()
+{
+     printf("Inserire le rimanenze iniziali: ");
+     scanf("%f", &a);
+     
+     while(getchar() != '\n');
+     
+     printf("\n");
+     printf("Inserire le rimanenze finali: ");
+     scanf("%f", &b);
+     
+     while(getchar() != '\n');
+          
+     printf("\n");
+     printf("Inserire gli acquisti al netto di resi e abbuoni: ");
+     scanf("%f", &c);
+     
+     while(getchar() != '\n');
+     
+     d = a - b + c;
+     
+     printf("\n");
+     printf("Il costo del venduto e' pari a: %.2f ", d);
+          
+     printf("\n");
+     printf("\n");
+     printf("Inserire i ricavi totali delle vendite al netto di resi e abbuoni: ");
+     scanf("%f", &e);
+     
+     while(getchar() != '\n');
+     
+     fflush(stdin);
+     fflush(0);
+     
+     f = e * 100 / d - 100;
+     
+     printf("\n");
+     printf("Il ricarico e' pari al %.2f per cento ", f);
+           
+     printf("\n");
+     printf("\n");
+     printf("Vuoi effettuare altri calcoli? s/n ");
+     scanf(" %c", &g);
+     
+     while(getchar() != '\n');
+            
+       if (g == 's')
+       {
+
+     system("CLS");
+     printf("Inserire le rimanenze iniziali: ");
+     scanf("%f", &a);
+     
+     while(getchar() != '\n');
+     
+     printf("\n");
+     printf("Inserire le rimanenze finali: ");
+     scanf("%f", &b);
+     
+     while(getchar() != '\n');
+     
+     printf("\n");
+     printf("Inserire gli acquisti al netto di resi e abbuoni: ");
+     scanf("%f", &c);
+     
+     while(getchar() != '\n');
+     
+     d = a - b + c;
+     
+     printf("\n");
+     printf("Il costo del venduto e' pari a: %.2f ", d);
+          
+     printf("\n");
+     printf("\n");
+     printf("Inserire i ricavi totali delle vendite al netto di resi e abbuoni: ");
+     scanf("%f", &e);
+     
+     while(getchar() != '\n');
+     
+     f = e * 100 / d - 100;
+     
+     printf("\n");
+     printf("Il ricarico e' pari al %.2f per cento ", f);
+               
+     printf("\n");
+     printf("\n");
+     printf("Vuoi effettuare altri calcoli? s/n ");
+     scanf(" %c", &g);}
+     
+     else
+     {
+                 
+       system("PAUSE");
+       return 0;}
+}
+     
+     
